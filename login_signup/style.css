@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif,'Times New Roman';
+    background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("images/pick_moon.jpg") no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.second-column{
+    border-radius: 30px;
+}
+.btn_pink,.sign_up_btn{
+    background-color: #eea2a9;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.sign_up_btn{
+    text-align: center;
+    width: 40%;
+}
+.sign_up_btn:hover{
+    background-color: #b16a71;
+    color: white;
+}
+.sign_in_btn,a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease ;
+    font-weight: bold;
+}
+.sign_in_btn:hover{
+    color: #eea2a9;
+}
+a i {
+    transition: 0.3s;
+}
+
+a:hover i {
+    color: #ff4da6;
+    transform: scale(1.2) rotate(5deg);
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    /* Add padding so text doesn't go under the eye icon */
+    padding-right: 40px !important; 
+    box-sizing: border-box;
+}
+
+#password_show_btn {
+    position: absolute;
+    right: 15px; /* Adjust distance from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Centers it vertically */
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10; /* Ensures it stays on top of the input */
+    color: #666;
+}
